@@ -1,6 +1,8 @@
 Totality of rational points on modular curves - Tension between integers and polynomials
 
-I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" (he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. In this course, I will endeavor to show you the simplest versions of ideas and connections of topics in the Title. Everyone is welcome!
+I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" (he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. 
+In this course, I will endeavor to show you the simplest versions of ideas and connections of topics in the Title. 
+Everyone is welcome!
 
 1. Organizational remarks, Motivations, Projective line P^1_{k} as CP^1, S^2, Fq(t) and Q
 
@@ -28,11 +30,11 @@ I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on
 
 13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and motives of Inertia stacks
 
-14. Height moduli spaces W^{min}_{n} of minimal weighted linear series, Vanishing conditions
+14. Height moduli spaces of minimal weight linear series, Vanishing conditions
 
 15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions
 
-16. Enumerating all minimal elliptic curves over global fields, Rationality of motivic height zeta function
+16. Enumerating elliptic curves over global fields, Rationality of motivic height zeta function
 
 17. Buffer class 3 - Discussion on Mordell conjecture with Summary of Faltings’s proof 
 
