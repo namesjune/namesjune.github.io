@@ -1,7 +1,6 @@
 Totality of rational points on modular curves - Tension between integers and polynomials
 
-I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" 
-(he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. 
+I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" (he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. 
 In this course, I will endeavor to show you the simplest versions of ideas and connections of topics in the Title. Everyone is welcome!
 
 1. Organizational remarks, Motivations, Projective line P^1_{k} as CP^1, S^2, Fq(t) and Q, Gauss-Bonnet formula, Grothendieck-Lefschetz trace formula
@@ -28,13 +27,13 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 12. Buffer class 2 - Discussion on Shafarevich conjecture for families of abelian varieties or algebraic curves over global field K
 
-13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and motives of Inertia stacks, PGL_2 stack quotients
+13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and Motives of Inertia stacks as Topology over residue field k
 
 14. Height moduli spaces W^{min}_{n} of minimal weighted linear series, Vanishing conditions, Motives of strata with specified additive reduction 
 
 15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions, Rationality of motivic height zeta function
 
-16. Motivic stabilization, Each monomial power as different bad reduction types, Poincaré duality of W^{min}_{n} as open loci 
+16. Motivic stabilization, PGL_2 stack quotients, Poincaré duality of W^{min}_{n}
 
 17. Enumerating all minimal elliptic curves over a rational function field, the nature of lower order main terms
 
