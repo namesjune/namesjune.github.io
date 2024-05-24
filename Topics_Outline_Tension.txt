@@ -1,12 +1,11 @@
 Totality of rational points on modular curves - Tension between integers and polynomials
 
 I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" (he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. 
-In this course, I will endeavor to show you the simplest versions of ideas and connections of topics in the Title. 
-Everyone is welcome!
+In this course, I will endeavor to show you the simplest versions of ideas and connections of topics in the Title. Everyone is welcome!
 
-1. Organizational remarks, Motivations, Projective line P^1_{k} as CP^1, S^2, Fq(t) and Q
+1. Organizational remarks, Motivations, Projective line P^1_{k} as CP^1, S^2, Fq(t) and Q, Gauss-Bonnet formula, Grothendieck-Lefschetz trace formula
 
-2. Point counts over finite fields, Étale cohomology with Weil conjecture, Idea of {Algebraization} via Grothendieck motivic classes as coarse invariants which is also exact
+2. Point counts over finite fields, Étale cohomology with Weil conjecture, Idea of {Algebraization} via Grothendieck motivic classes
 
 3. Rational points on P^1 over Fq(t) as coprime polynomial functions with << coefficients >> in the finite field Fq
 
@@ -18,7 +17,7 @@ Everyone is welcome!
 
 7. Elliptic curves, Modular curves and Universal family, Automorphisms over non-algebraically closed field k
 
-8. Elliptic fibrations via Weierstrass models as weighted linear series, Hodge line bundle, Discriminants, Reductions of elliptic curves, Mapping class groups and monodromy factorizations
+8. Elliptic fibrations via Weierstrass models as weighted linear series, Hodge line bundle, Discriminants, Reductions of elliptic curves, Monodromy factorizations
 
 9. Failure of Valuative Criterion of Properness for Proper stacks, Tate's algorithm for elliptic curves, Heights on stacks
 
