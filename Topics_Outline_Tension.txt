@@ -1,6 +1,7 @@
 Totality of rational points on modular curves - Tension between integers and polynomials
 
-I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" (he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. 
+I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on for my doctorate, he laughed and said "That's all child's play, you have geometry over function fields!" 
+(he followed that up with telling me to think about 'Arithmetic Physics' for my career). I now see that he was right. 
 In this course, I will endeavor to show you the simplest versions of ideas and connections of topics in the Title. Everyone is welcome!
 
 1. Organizational remarks, Motivations, Projective line P^1_{k} as CP^1, S^2, Fq(t) and Q, Gauss-Bonnet formula, Grothendieck-Lefschetz trace formula
@@ -17,13 +18,13 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 7. Elliptic curves, Modular curves and Universal family, Automorphisms over non-algebraically closed field k
 
-8. Elliptic fibrations via Weierstrass models as weighted linear series, Hodge line bundle, Discriminants, Reductions of elliptic curves, Monodromy factorizations
+8. Elliptic fibrations via Weierstrass models as weighted linear series, Hodge line bundle, Discriminants, Reductions of elliptic curves
 
 9. Failure of Valuative Criterion of Properness for Proper stacks, Tate's algorithm for elliptic curves, Stacky heights
 
 10. Hom stacks for Morphisms ( Integral points ) and Rat stacks for Rational maps ( Rational points )
 
-11. Geometry of rational points on modular curves via twisted maps ( Morphisms with Characters ), Birational geometry of surfaces, Minimal models and resolutions, Kodaira's classification
+11. Geometry of rational points on modular curves via twisted maps ( Morphisms with Characters ), Minimal models and resolutions
 
 12. Buffer class 2 - Discussion on Shafarevich conjecture for families of abelian varieties or algebraic curves over global field K
 
