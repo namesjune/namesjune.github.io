@@ -24,7 +24,7 @@ Everyone is welcome!
 
 10. Hom stacks for Morphisms ( Integral points ) and Rat stacks for Rational maps ( Rational points )
 
-11. Geometry of rational points on modular curves via twisted maps, Birational geometry of surfaces, Minimal models and resolutions, Kodaira's classification
+11. Geometry of rational points on modular curves via twisted maps ( Morphisms with Characters ), Birational geometry of surfaces, Minimal models and resolutions, Kodaira's classification
 
 12. Buffer class 2 - Discussion on Shafarevich conjecture for abelian varieties and algebraic curves
 
