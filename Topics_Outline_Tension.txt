@@ -28,11 +28,11 @@ I met Sir Michael Atiyah at 5th HLF in 2017. After hearing what I was working on
 
 13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and motives of Inertia stacks
 
-14. Height moduli spaces of minimal weight linear series, Vanishing conditions
+14. Height moduli spaces W^{min}_{n} of minimal weighted linear series, Vanishing conditions
 
 15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions
 
-16. Enumerating elliptic curves over global fields, Rationality of motivic height zeta function
+16. Enumerating all minimal elliptic curves over global fields, Rationality of motivic height zeta function
 
 17. Buffer class 3 - Discussion on Mordell conjecture with Summary of Faltings’s proof 
 
