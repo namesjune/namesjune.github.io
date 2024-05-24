@@ -26,7 +26,7 @@ Everyone is welcome!
 
 11. Geometry of rational points on modular curves via twisted maps ( Morphisms with Characters ), Birational geometry of surfaces, Minimal models and resolutions, Kodaira's classification
 
-12. Buffer class 2 - Discussion on Shafarevich conjecture for abelian varieties and algebraic curves
+12. Buffer class 2 - Discussion on Shafarevich conjecture for families of abelian varieties or algebraic curves over global field K
 
 13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and motives of Inertia stacks
 
@@ -34,7 +34,7 @@ Everyone is welcome!
 
 15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions
 
-16. Enumerating elliptic curves over global fields, Rationality of motivic height zeta function
+16. Enumerating elliptic curves over rational global field, Rationality of motivic height zeta function
 
 17. Buffer class 3 - Discussion on Mordell conjecture with Summary of Faltings’s proof 
 
