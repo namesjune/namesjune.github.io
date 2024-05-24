@@ -5,7 +5,7 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 1. Organizational remarks, Motivations, Projective line P^1_{k} as CP^1, S^2, Fq(t) and Q, Gauss-Bonnet formula, Grothendieck-Lefschetz trace formula
 
-2. Point counts over finite fields, Étale cohomology with Weil conjecture, Idea of {Algebraization} via Grothendieck motivic classes
+2. Point counts over finite fields, Étale cohomology with Weil conjecture, Practice of {Algebraization} via Grothendieck motivic classes
 
 3. Rational points on P^1 over Fq(t) as coprime polynomial functions with << coefficients >> in the finite field Fq
 
@@ -19,7 +19,7 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 8. Elliptic fibrations via Weierstrass models as weighted linear series, Hodge line bundle, Discriminants, Reductions of elliptic curves, Monodromy factorizations
 
-9. Failure of Valuative Criterion of Properness for Proper stacks, Tate's algorithm for elliptic curves, Heights on stacks
+9. Failure of Valuative Criterion of Properness for Proper stacks, Tate's algorithm for elliptic curves, Stacky heights
 
 10. Hom stacks for Morphisms ( Integral points ) and Rat stacks for Rational maps ( Rational points )
 
@@ -27,14 +27,16 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 12. Buffer class 2 - Discussion on Shafarevich conjecture for families of abelian varieties or algebraic curves over global field K
 
-13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and motives of Inertia stacks
+13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and motives of Inertia stacks, PGL_2 stack quotients
 
-14. Height moduli spaces of minimal weight linear series, Vanishing conditions
+14. Height moduli spaces W^{min}_{n} of minimal weighted linear series, Vanishing conditions, Motives of strata with specified additive reduction 
 
-15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions
+15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions, Rationality of motivic height zeta function
 
-16. Enumerating elliptic curves over rational global field, Rationality of motivic height zeta function
+16. Motivic stabilization, Each monomial power as different bad reduction types, Poincaré duality of W^{min}_{n} as open loci 
 
-17. Buffer class 3 - Discussion on Mordell conjecture with Summary of Faltings’s proof 
+17. Enumerating all minimal elliptic curves over a rational function field, the nature of lower order main terms
 
-18. Rank of E(K) - Discussion on Boundedness conjecture with Summary of Ulmer's proof, Distribution conjecture 
+18. Buffer class 3 - Discussion on Mordell conjecture with Summary of Faltings’s proof 
+
+19. Rank of E(K) - Discussion on Boundedness conjecture with Summary of Ulmer's proof, Distribution conjecture 
