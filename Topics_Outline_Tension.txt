@@ -23,9 +23,9 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 10. Hom stacks for Morphisms ( Integral points ) and Rat stacks for Rational maps ( Rational points )
 
-11. Geometry of rational points on modular curves via twisted maps ( Morphisms with Characters ), Minimal models and resolutions
+11. Geometry of rational points on modular curves via twisted maps ( Morphisms with Characters ), Resolution of singularities, Minimal models
 
-12. Buffer class 2 - Discussion on Shafarevich conjecture for families of abelian varieties or algebraic curves over global field K
+12. Buffer class 2 - Discussion on Shafarevich conjecture for families of abelian varieties or algebraic curves over a global field K
 
 13. Arithmetic of Algebraic stacks over Fq - Weighted and Unweighted point counts, and Motives of Inertia stacks as Topology over residue field k
 
@@ -33,9 +33,9 @@ In this course, I will endeavor to show you the simplest versions of ideas and c
 
 15. Ambient weighted projective stacks of all weighted linear series, Minimality conditions, Rationality of motivic height zeta function
 
-16. Motivic stabilization, PGL_2 stack quotients, Poincaré duality of W^{min}_{n}
+16. Motivic stabilization, PGL_2 stack quotients, Poincaré duality of open moduli loci 
 
-17. Enumerating all minimal elliptic curves over a rational function field, the nature of lower order main terms
+17. Enumerating all minimal elliptic curves over a rational function field, the origin and nature of lower order main terms
 
 18. Buffer class 3 - Discussion on Mordell conjecture with Summary of Faltings’s proof 
 
