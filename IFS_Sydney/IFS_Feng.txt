@@ -2,6 +2,6 @@
 
 Abstract: We will introduce the fundamental structures of Gaussian unitary ensemble (GUE), Gaussian orthogonal ensemble (GOE) and Gaussian symplectic ensemble (GSE). 
 The GUE exhibits a determinantal structure, which is closely related to the theory of orthogonal polynomials, while the GOE and GSE have Pfaffian structures, connected to skew-orthogonal polynomials. 
-We will also present some classical results such as the semicircle law, and the Tracy-Widom law regarding the largest eigenvalues.
+We will also present some classical results such as Wigner semicircle law, and the Tracy-Widom law regarding the largest eigenvalues.
 
 — Renjie Feng
