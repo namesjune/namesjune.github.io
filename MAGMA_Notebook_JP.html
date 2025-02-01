@@ -1,131 +1,14 @@
-<!DOCTYPE html>
-<!-- saved from url=(0056)https://namesjune.github.io/sfns_Sydney/sfns_Park_2.html -->
-<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="">--><base href=".">
-
-<link rel="shortcut icon" href="https://namesjune.github.io/sfns_Sydney/USYD.png">
-
-    </head><body><font face="Georgia">
-
-
-
-<center>
-
-
-<br> <br>
-
-<br> <br>
-
-<table>
-<tbody><tr>
-<td>
-<table width="650">
-<tbody><tr><td><font size="4"><b></b></font>
-
-<a href="https://magma.maths.usyd.edu.au/calc/" style="color:#fa4634">Online MAGMA</a>
-
-    
-<tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-<!--
-
-</td></tr><tr><td><b><big>Title: Inner arithmetic of rational points on moduli stacks</big></b><big><br></big></td>
-
-</tr><tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-<tr><td>Abstract: The study of elliptic fibrations f : X → C of an elliptic surface X over a curve C (i.e. family of elliptic curves over a function field) lies at the heart of surface classification.</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-<tr><td>John Tate (1925-2019) gave us wealth of essential mathematical ideas and constructions in algebraic number theory and arithmetic geometry, such as ' Tate's algorithm ' to determine the structure of elliptic singular fibers.</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-<tr><td>In this talk, we will unpack the classical Tate's algorithm by explicitly <br> <br>
-
-1. working with monodromy factorizations in the mapping class group SL(2,Z) of torus that corresponds to elliptic Lefschetz fibrations; <br> <br>
-
-2. working with global section homogeneous polynomials that corresponds to k(t)-rational point on the fine moduli stack Mbar_{1,1} of stable elliptic curves; we will supplement conceptual understanding by <a href="https://magma.maths.usyd.edu.au/calc/" style="color:#fa4634">Online MAGMA</a> utilizing the following code: <br> <br>
-
-
-
-<tr><td>and see the geometric meaning of representable classifying morphisms.</td></tr>
-<tr><td>&nbsp;</td></tr>
--->
-
-</td></tr><tr><td>KK&lt;t&gt; := FunctionField(GF(5));</td></tr>
-<tr><td>E := EllipticCurve([0, ]);</td></tr>
-<tr><td>E;</td></tr>
-<tr><td>&amp;*BadPlaces(E);</td></tr>
-<tr><td>LocalInformation(E);</td></tr>
-<tr><td>MordellWeilGroup(E);</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-</td></tr><tr><td>KK&lt;t&gt; := FunctionField(GF(4007));</td></tr>
-<tr><td>E1 := EllipticCurve([0, t]);</td></tr>
-<tr><td>E2 := EllipticCurve([0, t^2]);</td></tr>
-<tr><td>E3 := EllipticCurve([0, t^3]);</td></tr>
-<tr><td>E4 := EllipticCurve([0, t^4]);</td></tr>
-<tr><td>E5 := EllipticCurve([0, t^5]);</td></tr>
-<tr><td>E6 := EllipticCurve([0, t^6]);</td></tr>
-<tr><td>E7 := EllipticCurve([0, t^7]);</td></tr>
-<tr><td>E1;</td></tr>
-<tr><td>&amp;*BadPlaces(E1);</td></tr>
-<tr><td>LocalInformation(E1);</td></tr>
-<tr><td>E2;</td></tr>
-<tr><td>&amp;*BadPlaces(E2);</td></tr>
-<tr><td>LocalInformation(E2);</td></tr>
-<tr><td>E3;</td></tr>
-<tr><td>&amp;*BadPlaces(E3);</td></tr>
-<tr><td>LocalInformation(E3);</td></tr>
-<tr><td>E4;</td></tr>
-<tr><td>&amp;*BadPlaces(E4);</td></tr>
-<tr><td>LocalInformation(E4);</td></tr>
-<tr><td>E5;</td></tr>
-<tr><td>&amp;*BadPlaces(E5);</td></tr>
-<tr><td>LocalInformation(E5);</td></tr>
-<tr><td>E6;</td></tr>
-<tr><td>&amp;*BadPlaces(E6);</td></tr>
-<tr><td>LocalInformation(E6);</td></tr>
-<tr><td>E7;</td></tr>
-<tr><td>&amp;*BadPlaces(E7);</td></tr>
-<tr><td>LocalInformation(E7);</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-
-</td></tr><tr><td>KK&lt;t&gt; := FunctionField(GF(4007));</td></tr>
-<tr><td>E1 := EllipticCurve([0, t^3*(t-1)*(t-2)^5]);</td></tr>
-<tr><td>E2 := EllipticCurve([0, t^3*(t-1)^2*(t-2)^5]);</td></tr>
-<tr><td>E3 := EllipticCurve([0, t^3*(t-1)^3*(t-2)^5]);</td></tr>
-<tr><td>E1;</td></tr>
-<tr><td>&amp;*BadPlaces(E1);</td></tr>
-<tr><td>LocalInformation(E1);</td></tr>
-<tr><td>E2;</td></tr>
-<tr><td>&amp;*BadPlaces(E2);</td></tr>
-<tr><td>LocalInformation(E2);</td></tr>
-<tr><td>E3;</td></tr>
-<tr><td>&amp;*BadPlaces(E3);</td></tr>
-<tr><td>LocalInformation(E3);</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-</td></tr><tr><td>KK&lt;t&gt; := FunctionField(GF(4007));</td></tr>
-<tr><td>E := EllipticCurve([-27, 54 - 2^6*3^6*t^1]);</td></tr>
-<tr><td>E;</td></tr>
-<tr><td>&amp;*BadPlaces(E);</td></tr>
-<tr><td>LocalInformation(E);</td></tr>
-<tr><td>&nbsp;</td></tr>
-<tr><td>&nbsp;</td></tr>
-
-
-</tbody></table>
-</td> 
-</tr>
-
-</tr></tbody></table>
-
-</center>
-
-
-</font></body></html>
+KK<t> := FunctionField(GF(5^3));
+E := EllipticCurve([t^2, t^3 + t]);
+E;
+&*BadPlaces(E);
+LocalInformation(E);
+MordellWeilGroup(E);
+ 
+ 
+KK<t> := FunctionField(GF(5^12));
+E := EllipticCurve([t^2, t^3 + t]);
+E;
+&*BadPlaces(E);
+LocalInformation(E);
+MordellWeilGroup(E);
