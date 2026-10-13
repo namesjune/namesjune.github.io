@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>June Park</title>
-    <meta name="keywords" content="Jun-Yong PARK">
-    <link rel="shortcut icon" href="https://namesjune.github.io/USYD.png">
+    <title>June Park | School of Mathematics and Statistics</title>
+    <meta name="description" content="Jun-Yong Park (June Park), Lecturer in Pure Mathematics at the University of Sydney. Research in arithmetic geometry, algebraic varieties, and moduli spaces.">
+    <meta name="keywords" content="Jun-Yong PARK, June Park, Mathematics, University of Sydney, Algebraic Geometry, Arithmetic Geometry, Moduli Spaces">
+    <link rel="icon" href="https://namesjune.github.io/USYD.png">
+
+    <!-- Prevent Dark Mode Flash & Check System Preference -->
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
 
     <style>
         /* --- Modern Academic Theme Variables --- */
@@ -24,8 +36,8 @@
             --content-font: "Georgia", "Times New Roman", serif;
         }
 
-        /* --- Dark Mode Overrides --- */
-        body.dark-mode {
+        /* --- Dark Mode Overrides (Applied to html tag) --- */
+        html.dark-mode {
             --primary-color: #68d391; /* Lighter, highly visible green for dark mode */
             --primary-hover: #9ae6b4;
             --text-main: #e2e8f0; /* Soft light gray */
@@ -36,15 +48,19 @@
             --pub-title: #ffffff;
         }
 
+        html {
+            scroll-behavior: smooth; /* Smooth gliding for anchor links */
+        }
+
         body {
             font-family: var(--content-font);
-            font-size: 110%; /* Slightly larger base size for readability */
+            font-size: 110%;
             line-height: 1.7;
             background-color: var(--bg-color);
             color: var(--text-main);
             margin: 0;
             padding: 0;
-            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth fade effect */
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         /* --- Layout --- */
@@ -52,9 +68,9 @@
             max-width: 850px;
             margin-top: 60px;
             margin-bottom: 60px;
-            margin-left: 100px; /* Restores the original left-aligned indent */
+            margin-left: 100px; /* Classic left-aligned indent */
             padding-right: 24px;
-            position: relative; /* Anchors the absolute positioned toggle button */
+            position: relative;
         }
 
         /* --- Dark Mode Toggle Button --- */
@@ -64,16 +80,18 @@
             right: 24px;
             background: transparent;
             border: none;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             cursor: pointer;
             padding: 8px;
             border-radius: 50%;
-            transition: background-color 0.2s ease;
+            line-height: 1;
+            transition: background-color 0.2s ease, transform 0.2s ease;
             color: var(--heading-color);
         }
 
         .theme-toggle:hover {
             background-color: var(--border-color);
+            transform: scale(1.08);
         }
 
         /* --- Typography and Links --- */
@@ -88,7 +106,7 @@
             margin-top: 2.5em;
             margin-bottom: 1em;
             padding-bottom: 8px;
-            border-bottom: 2px solid var(--border-color); /* Clean section dividers */
+            border-bottom: 2px solid var(--border-color);
         }
 
         a {
@@ -119,11 +137,12 @@
         }
 
         .header-image img {
-            width: 320px; 
+            width: 320px;
             height: auto;
             max-width: 100%;
-            border-radius: 6px; /* Soft modern corners */
-            box-shadow: 0 4px 14px rgba(0,0,0,0.08); /* Subtle depth */
+            border-radius: 6px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            display: block;
         }
 
         .header-text {
@@ -131,7 +150,7 @@
             font-size: 0.95rem;
         }
 
-        .header-text h3 {
+        .header-text h1 {
             border-bottom: none;
             margin-top: 0;
             margin-bottom: 15px;
@@ -139,9 +158,13 @@
         }
 
         /* Internal navigation links */
-        .header-text b a {
+        .nav-links {
+            font-weight: bold;
+        }
+
+        .nav-links a {
             display: inline-block;
-            margin-right: 12px;
+            margin-right: 14px;
             font-size: 1rem;
         }
 
@@ -152,7 +175,7 @@
 
         .content ul {
             padding-left: 20px;
-            list-style-type: square; /* Academic look for bullets */
+            list-style-type: square;
             color: var(--text-muted);
         }
 
@@ -161,7 +184,6 @@
             color: var(--text-main);
         }
 
-        /* Publication titles italicized nicely */
         .content li i {
             color: var(--pub-title);
             transition: color 0.3s ease;
@@ -182,14 +204,14 @@
             font-size: 0.85rem;
             color: var(--text-muted);
             margin-top: 60px;
-            text-align: left; /* Aligned left to match the layout */
+            text-align: left;
         }
 
         /* --- Mobile Responsiveness --- */
         @media (max-width: 768px) {
             .container {
                 margin-top: 40px;
-                margin-left: 24px; /* Shrinks the huge left indent on small screens */
+                margin-left: 24px;
             }
             .theme-toggle {
                 top: -30px;
@@ -204,21 +226,32 @@
                 max-width: 320px;
             }
         }
+
+        /* --- Print Styles --- */
+        @media print {
+            .theme-toggle {
+                display: none;
+            }
+            .container {
+                margin: 0;
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
     <!-- Dark Mode Toggle -->
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌓</button>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Light/Dark Mode">🌓</button>
 
     <!-- Header Section -->
-    <div class="header-flex">
+    <header class="header-flex">
         <div class="header-image">
-            <img src="https://namesjune.github.io/June_Lucca.jpeg" alt="Portrait of Jun-Yong Park" title="I fear the Greeks even when they are bringing gifts.">
+            <img src="https://namesjune.github.io/June_Lucca.jpeg" width="320" height="424" alt="Portrait of Jun-Yong Park" title="I fear the Greeks even when they are bringing gifts.">
         </div>
         <div class="header-text">
-            <h3>Park Jun-Yong (朴俊勇)</h3>
+            <h1>Park Jun-Yong (朴俊勇)</h1>
             <p><b>Mailing Address:</b><br>
             School of Mathematics and Statistics <br>
             The University of Sydney <br>
@@ -227,133 +260,136 @@
             Office: Room 493, Carslaw Building (<a href="https://maps.app.goo.gl/PavfvJqUR8MqZCCv6">F07</a>)
             </p>
             <p><b>Email:</b> june.park [at] sydney.edu.au </p>
-            <p><b>Website:</b> <a href="http://www.fibration.net">www.fibration.net</a> </p>
+            <p><b>Website:</b> <a href="https://www.fibration.net">www.fibration.net</a> </p>
             <hr>
-            <p><b>
+            <nav class="nav-links" aria-label="Page sections">
                 <a href="#seminars">Seminars</a>
                 <a href="#teaching">Teaching</a>
                 <a href="#projects">Research</a>
                 <a href="#misc">Miscellaneous</a>
-            </b></p>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <!-- About Me Section -->
-    <h3 id="about"> About me </h3>
-    <div class="content">
-        <p>I am a <a href="https://www.maths.usyd.edu.au/ut/people?who=JY_Park&sms=y">Lecturer</a> and a member of the pure mathematics research group at the <a href="https://profiles.sydney.edu.au/june.park">University of Sydney</a>. <br>
-        Previously, I was a research fellow at the <a href="https://ms.unimelb.edu.au/">University of Melbourne</a>, <a href="https://www.mpim-bonn.mpg.de/">MPIM Bonn</a> and <a href="https://cgp.ibs.re.kr/">IBS-CGP Pohang</a>. <br>
-        I received <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=235498">Ph.D.</a> in 2018 from the <a href="https://math.umn.edu/">University of Minnesota</a> under the supervision of <a href="https://www-users.cse.umn.edu/~cwesterl/">Craig Westerland</a>.</p>
+    <main>
+        <!-- About Me Section -->
+        <section aria-labelledby="about">
+            <h3 id="about">About me</h3>
+            <div class="content">
+                <p>I am a <a href="https://www.maths.usyd.edu.au/ut/people?who=JY_Park&amp;sms=y">Lecturer</a> and a member of the pure mathematics research group at the <a href="https://profiles.sydney.edu.au/june.park">University of Sydney</a>. <br>
+                Previously, I was a research fellow at the <a href="https://ms.unimelb.edu.au/">University of Melbourne</a>, <a href="https://www.mpim-bonn.mpg.de/">MPIM Bonn</a> and <a href="https://cgp.ibs.re.kr/">IBS-CGP Pohang</a>. <br>
+                I received <a href="https://www.genealogy.math.ndsu.nodak.edu/id.php?id=235498">Ph.D.</a> in 2018 from the <a href="https://math.umn.edu/">University of Minnesota</a> under the supervision of <a href="https://www-users.cse.umn.edu/~cwesterl/">Craig Westerland</a>.</p>
 
-        <p>I'm interested in the arithmetic of algebraic varieties and their moduli spaces. My work focuses on rational points of moduli stacks over function fields (equivalently, families of varieties over curves) and on the height moduli spaces that give the totality of such families a geometry of its own. <br><br>
-        "<a class="nu" href="https://namesjune.github.io/Melbourne_2026_JP.pdf">Elliptic curves over k(t), &#120125;<sub>q</sub>(t), &#8450;(t): Height moduli, exact counts, rank jumps</a>" at <a class="nu" href="http://phck.net/hs2026/">Melbourne 2026</a></p>
+                <p>I'm interested in the arithmetic of algebraic varieties and their moduli spaces. My work focuses on rational points of moduli stacks over function fields (equivalently, families of varieties over curves) and on the height moduli spaces that give the totality of such families a geometry of its own. <br><br>
+                "<a href="https://namesjune.github.io/Melbourne_2026_JP.pdf">Elliptic curves over k(t), &#120125;<sub>q</sub>(t), &#8450;(t): Height moduli, exact counts, rank jumps</a>" at <a href="http://phck.net/hs2026/">Melbourne 2026</a></p>
 
-        <p>Here are my profiles on <a href="https://scholar.google.com/citations?user=b8TVplUAAAAJ&amp;hl=en">Google Scholar</a>, <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1074005">MathSciNet</a>, <a href="https://zbmath.org/authors/?q=ai%3Apark.jun-yong">ZbMATH</a>, <a href="http://orcid.org/0000-0003-1464-0343">ORCiD</a>, <a href="https://arxiv.org/a/park_j_5.html">arXiv</a> and <a href="https://namesjune.github.io/CV_June_Park.pdf">Curriculum Vitæ</a>.</p>
-    </div>
+                <p>Here are my profiles on <a href="https://scholar.google.com/citations?user=b8TVplUAAAAJ&amp;hl=en">Google Scholar</a>, <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/1074005">MathSciNet</a>, <a href="https://zbmath.org/authors/?q=ai%3Apark.jun-yong">ZbMATH</a>, <a href="https://orcid.org/0000-0003-1464-0343">ORCiD</a>, <a href="https://arxiv.org/a/park_j_5.html">arXiv</a> and <a href="https://namesjune.github.io/CV_June_Park.pdf">Curriculum Vitæ</a>.</p>
+            </div>
+        </section>
 
-    <!-- Seminars Section -->
-    <h3 id="seminars"> Seminars & Workshops </h3>
-    <div class="content">
-        <ul>
-            <li>
-                I am co-organizing a Moduli retreat with <a href="https://sites.google.com/site/scottfmullane/">Scott Mullane</a><br>
-                <i><a href="https://sites.google.com/site/scottfmullane/moduli-retreat">Point Counts of Moduli Stacks via Motives and Cohomology</a></i><br>
-                Time: 1-4 December 2025, Place: Surf Coast, Victoria.
-            </li>
-            <li>
-                I am organizing the <i><a href="https://namesjune.github.io/Aspen.html">Spaces, Functions and Numbers Seminar</a>.</i> <br>
-                Time: Tuesday 4:30 - 6:00 pm, Place: Macleay Building (<a href="https://maps.app.goo.gl/BxJ8EC35KgAi6LTJ7">A12</a>) Room 301 (<a href="https://mathematical-research-institute.sydney.edu.au/">SMRI</a> Seminar Room).
-            </li>
-        </ul>
-    </div>
+        <!-- Seminars Section -->
+        <section aria-labelledby="seminars">
+            <h3 id="seminars">Seminars &amp; Workshops</h3>
+            <div class="content">
+                <ul>
+                    <li>
+                        I am co-organizing a Moduli retreat with <a href="https://sites.google.com/site/scottfmullane/">Scott Mullane</a><br>
+                        <i><a href="https://sites.google.com/site/scottfmullane/moduli-retreat">Point Counts of Moduli Stacks via Motives and Cohomology</a></i><br>
+                        Time: 1-4 December 2025, Place: Surf Coast, Victoria.
+                    </li>
+                    <li>
+                        I am organizing the <i><a href="https://namesjune.github.io/Aspen.html">Spaces, Functions and Numbers Seminar</a>.</i> <br>
+                        Time: Tuesday 4:30 - 6:00 pm, Place: Macleay Building (<a href="https://maps.app.goo.gl/BxJ8EC35KgAi6LTJ7">A12</a>) Room 301 (<a href="https://mathematical-research-institute.sydney.edu.au/">SMRI</a> Seminar Room).
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Teaching Section -->
-    <h3 id="teaching"> Teaching </h3>
-    <div class="content">
-        <ul>
-            <li><a href="https://canvas.sydney.edu.au/courses/74946">MATH3061</a>: Geometry & Topology. <br> The University of Sydney, Fall 2026.</li>
-            <li><a href="https://canvas.sydney.edu.au/courses/71508">MATH2069</a>: Discrete Mathematics and Graph Theory. <br> The University of Sydney, Spring 2026.</li>
-            <li><a href="https://canvas.sydney.edu.au/courses/71502">MATH1062/1023</a>: Math 1B - Multivariable Calculus and Modelling. <br> The University of Sydney, Spring 2026.</li>
-            <li><a href="http://events.kias.re.kr/h/KIASLFANT2025/?pageNo=5744">Topics in NT</a>: Totality of rational points on moduli stacks - Counting families of varieties. <br> KIAS-LFANT Winter School on Number Theory, January 2025.</li>
-            <li><a href="https://canvas.sydney.edu.au/courses/59854">MATH1004</a>: Discrete Mathematics. <br> The University of Sydney, Fall 2024.</li>
-            <li><a href="https://namesjune.github.io/Topics_Elliptic_Surfaces.html">Topics in AG</a>: Elliptic Surfaces - Classical to Moduli. <br> The University of Melbourne, Spring 2023.</li>
-        </ul>
-    </div>
+        <!-- Teaching Section -->
+        <section aria-labelledby="teaching">
+            <h3 id="teaching">Teaching</h3>
+            <div class="content">
+                <ul>
+                    <li><a href="https://canvas.sydney.edu.au/courses/74946">MATH3061</a>: Geometry &amp; Topology. <br> The University of Sydney, Fall 2026.</li>
+                    <li><a href="https://canvas.sydney.edu.au/courses/71508">MATH2069</a>: Discrete Mathematics and Graph Theory. <br> The University of Sydney, Spring 2026.</li>
+                    <li><a href="https://canvas.sydney.edu.au/courses/71502">MATH1062/1023</a>: Math 1B - Multivariable Calculus and Modelling. <br> The University of Sydney, Spring 2026.</li>
+                    <li><a href="http://events.kias.re.kr/h/KIASLFANT2025/?pageNo=5744">Topics in NT</a>: Totality of rational points on moduli stacks - Counting families of varieties. <br> KIAS-LFANT Winter School on Number Theory, January 2025.</li>
+                    <li><a href="https://canvas.sydney.edu.au/courses/59854">MATH1004</a>: Discrete Mathematics. <br> The University of Sydney, Fall 2024.</li>
+                    <li><a href="https://namesjune.github.io/Topics_Elliptic_Surfaces.html">Topics in AG</a>: Elliptic Surfaces - Classical to Moduli. <br> The University of Melbourne, Spring 2023.</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Projects in Progress -->
-    <h3 id="projects">Projects in progress </h3>
-    <div class="content">
-        <ul>
-            <li><i>Arithmetic of the moduli of Calabi-Yau fibrations over function fields</i></li>
-            <li><i>Tate's algorithm via twisted morphisms of abelian surfaces</i></li>
-        </ul>
-    </div>
+        <!-- Projects in Progress -->
+        <section aria-labelledby="projects">
+            <h3 id="projects">Projects in progress</h3>
+            <div class="content">
+                <ul>
+                    <li><i>Arithmetic of the moduli of Calabi-Yau fibrations over function fields</i></li>
+                    <li><i>Tate's algorithm via twisted morphisms of abelian surfaces</i></li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Publications -->
-    <h3 id="papers">Publications and Preprints </h3>
-    <div class="content">
-        <ul>
-            <li><i>Automation Without Understanding: A proof is a product. Understanding is a capacity.</i><br>
-            &lt; <a href="https://namesjune.github.io/AWU_JP.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2607.06377">arXiv</a>, Journal &gt;</li>
-            <li><i>Analytically dense Mordell-Weil rank jumps on elliptic surfaces via transverse realization</i><br>
-            &lt; <a href="https://namesjune.github.io/Realization.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2601.15543">arXiv</a>, Journal &gt;</li>
-            <li><i>100% of elliptic curves with a marked point have positive rank</i> <br> (with Tristan Phillips) <br>
-            &lt; <a href="https://namesjune.github.io/Rank.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2504.01965">arXiv</a>, Journal &gt;</li>
-            <li><i>Exact counts of elliptic curves of bounded height over &#120125;<sub>q</sub>(t) in characteristics 2 and 3</i><br>
-            &lt; <a href="https://namesjune.github.io/Char32.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2507.06754">arXiv</a>, Journal &gt;</li>
-            <li><i>Height moduli on cyclotomic stacks and counting elliptic curves over function fields</i> <br> (with Dori Bejleri and Matthew Satriano) <br>
-            &lt; <a href="https://namesjune.github.io/BPS_Elliptic.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2210.04450">arXiv</a>, Journal &gt;</li>
-            <li><i>Étale cohomological stability of the moduli space of stable elliptic surfaces</i> <br> (with Oishee Banerjee and Johannes Schmitt) <br>
-            &lt; <a href="https://namesjune.github.io/Cohomology.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2207.02496">arXiv</a>, Journal &gt;</li>
-            <li><i>Arithmetic geometry of the moduli stack of Weierstrass fibrations over &#8473;<sup>1</sup></i> <br>Mathematische Zeitschrift, Vol. 310, No. 4, #84 (2025) (with Johannes Schmitt) <br>
-            &lt; <a href="https://rdcu.be/eqflO">SharedIt</a>, <a href="http://arxiv.org/abs/2107.12231">arXiv</a>, <a href="https://doi.org/10.1007/s00209-025-03786-8" target="_blank">Journal</a> &gt;</li>
-            <li><i>Enumerating odd-degree hyperelliptic curves and abelian surfaces over &#8473;<sup>1</sup></i> <br>Mathematische Zeitschrift, Vol. 304, No. 1, #5 (2023) (with Changho Han) <br>
-            &lt; <a href="https://rdcu.be/daQn6">SharedIt</a>, <a href="https://arxiv.org/abs/2002.00563">arXiv</a>, <a href="https://doi.org/10.1007/s00209-023-03260-3" target="_blank">Journal</a> &gt;</li>
-            <li><i>Motive of the moduli stack of rational curves on a weighted projective stack</i> <br>Research in the Mathematical Sciences, Vol. 8, No. 1, #1 (2021) (with Hunter Spink) <br> Special issue of PIMS 2019 Workshop on Arithmetic Topology <br>
-            &lt; <a href="https://rdcu.be/cc0HV">SharedIt</a>, <a href="https://arxiv.org/abs/1909.01030">arXiv</a>, <a href="https://doi.org/10.1007/s40687-020-00236-1" target="_blank">Journal</a> &gt;</li>
-            <li><i>Arithmetic of the moduli of semistable elliptic surfaces</i> <br>Mathematische Annalen, Vol. 375, No. 3-4, 1745-1760 (2019) (with Changho Han)<br>
-            &lt; <a href="https://rdcu.be/bxAE1">SharedIt</a>, <a href="https://arxiv.org/abs/1607.03187">arXiv</a>, <a href="https://doi.org/10.1007/s00208-019-01830-7" target="_blank">Journal</a> &gt;</li>
-            <li><i>Unique fiber sum decomposability of genus 2 Lefschetz fibrations</i> <br>Topology and its Applications, Vol. 222, 29-52 (2017)<br>
-            &lt; <a href="http://arxiv.org/abs/1507.04041">arXiv</a>, <a href="http://dx.doi.org/10.1016/j.topol.2017.02.068" target="_blank">Journal</a> &gt;</li>
-            <li><i>Lantern substitution and new symplectic 4-manifolds with b<sub>2</sub><sup>+</sup> = 3 </i> <br>Mathematical Research Letters, Vol. 21, No. 1, 1-17 (2014) (with Anar Akhmedov)<br>
-            &lt; <a href="http://arxiv.org/abs/1207.0684">arXiv</a>, <a href="http://dx.doi.org/10.4310/MRL.2014.v21.n1.a1" target="_blank">Journal</a> &gt;</li>
-        </ul>
-    </div>
+        <!-- Publications -->
+        <section aria-labelledby="papers">
+            <h3 id="papers">Publications and Preprints</h3>
+            <div class="content">
+                <ul>
+                    <li><i>Automation Without Understanding: A proof is a product. Understanding is a capacity.</i><br>
+                    &lt; <a href="https://namesjune.github.io/AWU_JP.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2607.06377">arXiv</a>, Journal &gt;</li>
+                    <li><i>Analytically dense Mordell-Weil rank jumps on elliptic surfaces via transverse realization</i><br>
+                    &lt; <a href="https://namesjune.github.io/Realization.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2601.15543">arXiv</a>, Journal &gt;</li>
+                    <li><i>100% of elliptic curves with a marked point have positive rank</i> <br> (with Tristan Phillips) <br>
+                    &lt; <a href="https://namesjune.github.io/Rank.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2504.01965">arXiv</a>, Journal &gt;</li>
+                    <li><i>Exact counts of elliptic curves of bounded height over &#120125;<sub>q</sub>(t) in characteristics 2 and 3</i><br>
+                    &lt; <a href="https://namesjune.github.io/Char32.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2507.06754">arXiv</a>, Journal &gt;</li>
+                    <li><i>Height moduli on cyclotomic stacks and counting elliptic curves over function fields</i> <br> (with Dori Bejleri and Matthew Satriano) <br>
+                    &lt; <a href="https://namesjune.github.io/BPS_Elliptic.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2210.04450">arXiv</a>, Journal &gt;</li>
+                    <li><i>Étale cohomological stability of the moduli space of stable elliptic surfaces</i> <br> (with Oishee Banerjee and Johannes Schmitt) <br>
+                    &lt; <a href="https://namesjune.github.io/Cohomology.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2207.02496">arXiv</a>, Journal &gt;</li>
+                    <li><i>Arithmetic geometry of the moduli stack of Weierstrass fibrations over &#8473;<sup>1</sup></i> <br>Mathematische Zeitschrift, Vol. 310, No. 4, #84 (2025) (with Johannes Schmitt) <br>
+                    &lt; <a href="https://rdcu.be/eqflO">SharedIt</a>, <a href="https://arxiv.org/abs/2107.12231">arXiv</a>, <a href="https://doi.org/10.1007/s00209-025-03786-8" target="_blank" rel="noopener">Journal</a> &gt;</li>
+                    <li><i>Enumerating odd-degree hyperelliptic curves and abelian surfaces over &#8473;<sup>1</sup></i> <br>Mathematische Zeitschrift, Vol. 304, No. 1, #5 (2023) (with Changho Han) <br>
+                    &lt; <a href="https://rdcu.be/daQn6">SharedIt</a>, <a href="https://arxiv.org/abs/2002.00563">arXiv</a>, <a href="https://doi.org/10.1007/s00209-023-03260-3" target="_blank" rel="noopener">Journal</a> &gt;</li>
+                    <li><i>Motive of the moduli stack of rational curves on a weighted projective stack</i> <br>Research in the Mathematical Sciences, Vol. 8, No. 1, #1 (2021) (with Hunter Spink) <br> Special issue of PIMS 2019 Workshop on Arithmetic Topology <br>
+                    &lt; <a href="https://rdcu.be/cc0HV">SharedIt</a>, <a href="https://arxiv.org/abs/1909.01030">arXiv</a>, <a href="https://doi.org/10.1007/s40687-020-00236-1" target="_blank" rel="noopener">Journal</a> &gt;</li>
+                    <li><i>Arithmetic of the moduli of semistable elliptic surfaces</i> <br>Mathematische Annalen, Vol. 375, No. 3-4, 1745-1760 (2019) (with Changho Han)<br>
+                    &lt; <a href="https://rdcu.be/bxAE1">SharedIt</a>, <a href="https://arxiv.org/abs/1607.03187">arXiv</a>, <a href="https://doi.org/10.1007/s00208-019-01830-7" target="_blank" rel="noopener">Journal</a> &gt;</li>
+                    <li><i>Unique fiber sum decomposability of genus 2 Lefschetz fibrations</i> <br>Topology and its Applications, Vol. 222, 29-52 (2017)<br>
+                    &lt; <a href="https://arxiv.org/abs/1507.04041">arXiv</a>, <a href="https://doi.org/10.1016/j.topol.2017.02.068" target="_blank" rel="noopener">Journal</a> &gt;</li>
+                    <li><i>Lantern substitution and new symplectic 4-manifolds with b<sub>2</sub><sup>+</sup> = 3 </i> <br>Mathematical Research Letters, Vol. 21, No. 1, 1-17 (2014) (with Anar Akhmedov)<br>
+                    &lt; <a href="https://arxiv.org/abs/1207.0684">arXiv</a>, <a href="https://doi.org/10.4310/MRL.2014.v21.n1.a1" target="_blank" rel="noopener">Journal</a> &gt;</li>
+                </ul>
+            </div>
+        </section>
 
-    <!-- Miscellaneous Section -->
-    <h3 id="misc">Miscellaneous</h3>
-    <ul class="misc-list">
-        <li>2026 <a href="https://namesjune.github.io/USyd.png">USyd</a> Academic <a href="https://namesjune.github.io/Sydney_2026_Calendar.pdf">Calendar</a></li>
-        <li>Upcoming conferences in <a href="http://math.stanford.edu/~vakil/conferences.html">Algebraic Geometry</a>, <a href="http://mathmeetings.net/">Algebraic Topology</a> and <a href="https://kskedlaya.org/cgi-bin/confs.cgi">Arithmetic Geometry</a>.</li>
-        <li>Best coffee houses in Minneapolis: <a href="https://spyhousecoffee.com/">Spyhouse</a>, Providence: <a href="http://www.boltcoffeecompany.com/">Bolt</a>, Seoul: <a href="https://www.beanbrothers.co.kr/">Bean Brothers</a> & <a href="https://tailorcoffee.com/">Tailor</a>, Bonn: <a href="https://www.lighthousecafe.de/">Lighthouse</a> & <a href="https://www.kessels-espresso-studio.de/">Kessel's</a>, Melbourne: <a href="https://www.patriciacoffee.com.au/">Patricia</a>, Sydney: <a href="https://www.tobysestate.com.au/">Toby's Estate</a>, Tokyo: <a href="https://glitchcoffee.com/">Glitch</a>.</li>
-        <li>Slides (<a href="https://tsimf.tsinghua.edu.cn/info/1477/1636.htm">Sanya 2025</a>) "<a href="https://namesjune.github.io/Sanya_2025_JP.pdf">Height moduli spaces and exact Shafarevich counts for families of varieties</a>"</li>
-    </ul>
+        <!-- Miscellaneous Section -->
+        <section aria-labelledby="misc">
+            <h3 id="misc">Miscellaneous</h3>
+            <ul class="misc-list">
+                <li>2026 <a href="https://namesjune.github.io/USyd.png">USyd</a> Academic <a href="https://namesjune.github.io/Sydney_2026_Calendar.pdf">Calendar</a></li>
+                <li>Upcoming conferences in <a href="https://math.stanford.edu/~vakil/conferences.html">Algebraic Geometry</a>, <a href="https://mathmeetings.net/">Algebraic Topology</a> and <a href="https://kskedlaya.org/cgi-bin/confs.cgi">Arithmetic Geometry</a>.</li>
+                <li>Best coffee houses in Minneapolis: <a href="https://spyhousecoffee.com/">Spyhouse</a>, Providence: <a href="https://www.boltcoffeecompany.com/">Bolt</a>, Seoul: <a href="https://www.beanbrothers.co.kr/">Bean Brothers</a> &amp; <a href="https://tailorcoffee.com/">Tailor</a>, Bonn: <a href="https://www.lighthousecafe.de/">Lighthouse</a> &amp; <a href="https://www.kessels-espresso-studio.de/">Kessel's</a>, Melbourne: <a href="https://www.patriciacoffee.com.au/">Patricia</a>, Sydney: <a href="https://www.tobysestate.com.au/">Toby's Estate</a>, Tokyo: <a href="https://glitchcoffee.com/">Glitch</a>.</li>
+                <li>Slides (<a href="https://tsimf.tsinghua.edu.cn/info/1477/1636.htm">Sanya 2025</a>) "<a href="https://namesjune.github.io/Sanya_2025_JP.pdf">Height moduli spaces and exact Shafarevich counts for families of varieties</a>"</li>
+            </ul>
+        </section>
+    </main>
 
-    <p class="last-updated">Last updated: August 7th 2026</p>
-
+    <footer>
+        <p class="last-updated">Last updated: October 14th 2026</p>
+    </footer>
 </div>
 
-<!-- Dark Mode Script -->
+<!-- Dark Mode Toggle Script -->
 <script>
     const themeToggle = document.getElementById('themeToggle');
-    const body = document.body;
+    const root = document.documentElement;
 
-    // 1. Check local storage for saved preference
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        body.classList.add('dark-mode');
-    }
-
-    // 2. Listen for clicks on the toggle button
     themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        
-        // 3. Save the user's preference to local storage
-        if (body.classList.contains('dark-mode')) {
-            localStorage.setItem('theme', 'dark');
-        } else {
-            localStorage.setItem('theme', 'light');
-        }
+        root.classList.toggle('dark-mode');
+        const isDark = root.classList.contains('dark-mode');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
 </script>
 
