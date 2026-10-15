@@ -137,8 +137,7 @@
         }
 
         .header-image img {
-            width: 320px;
-            height: auto;
+            height: auto; /* Removed fixed 320px width so HTML width="..." works */
             max-width: 100%;
             border-radius: 6px;
             box-shadow: 0 4px 14px rgba(0,0,0,0.08);
@@ -175,7 +174,7 @@
 
         .content ul {
             padding-left: 20px;
-            list-style-type: square;
+            list-style-type: disc; /* Changed from square to disc */
             color: var(--text-muted);
         }
 
@@ -243,12 +242,12 @@
 
 <div class="container">
     <!-- Dark Mode Toggle -->
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Light/Dark Mode">🌓</button>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Light/Dark Mode">♢</button>
 
     <!-- Header Section -->
     <header class="header-flex">
         <div class="header-image">
-            <img src="https://namesjune.github.io/June_Lucca.jpeg" width="320" height="424" alt="Portrait of Jun-Yong Park" title="Timeo Danaos et dona ferentes - Virgil">
+            <img src="https://namesjune.github.io/June_Italy.JPG" width="683" height="687" title="Timeo Danaos et dona ferentes - Virgil">
         </div>
         <div class="header-text">
             <h1>Park Jun-Yong (朴俊勇)</h1>
@@ -266,6 +265,7 @@
                 <a href="#seminars">Seminars</a>
                 <a href="#teaching">Teaching</a>
                 <a href="#projects">Research</a>
+                <a href="#essays">Essays</a>
                 <a href="#misc">Miscellaneous</a>
             </nav>
         </div>
@@ -336,14 +336,12 @@
             <h3 id="papers">Publications and Preprints</h3>
             <div class="content">
                 <ul>
-                    <li><i>Automation Without Understanding: A proof is a product. Understanding is a capacity.</i><br>
-                    &lt; <a href="https://namesjune.github.io/AWU_JP.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2607.06377">arXiv</a>, Journal &gt;</li>
                     <li><i>Analytically dense Mordell-Weil rank jumps on elliptic surfaces via transverse realization</i><br>
                     &lt; <a href="https://namesjune.github.io/Realization.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2601.15543">arXiv</a>, Journal &gt;</li>
-                    <li><i>100% of elliptic curves with a marked point have positive rank</i> <br> (with Tristan Phillips) <br>
-                    &lt; <a href="https://namesjune.github.io/Rank.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2504.01965">arXiv</a>, Journal &gt;</li>
                     <li><i>Exact counts of elliptic curves of bounded height over &#120125;<sub>q</sub>(t) in characteristics 2 and 3</i><br>
                     &lt; <a href="https://namesjune.github.io/Char32.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2507.06754">arXiv</a>, Journal &gt;</li>
+                    <li><i>100% of elliptic curves with a marked point have positive rank</i> <br> (with Tristan Phillips) <br>
+                    &lt; <a href="https://namesjune.github.io/Rank.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2504.01965">arXiv</a>, Journal &gt;</li>
                     <li><i>Height moduli on cyclotomic stacks and counting elliptic curves over function fields</i> <br> (with Dori Bejleri and Matthew Satriano) <br>
                     &lt; <a href="https://namesjune.github.io/BPS_Elliptic.pdf">Preprint</a>, <a href="https://arxiv.org/abs/2210.04450">arXiv</a>, Journal &gt;</li>
                     <li><i>Étale cohomological stability of the moduli space of stable elliptic surfaces</i> <br> (with Oishee Banerjee and Johannes Schmitt) <br>
@@ -377,7 +375,7 @@
     </main>
 
     <footer>
-        <p class="last-updated">Last updated: October 14th 2026</p>
+        <p class="last-updated">Last updated: October 15th 2026</p>
     </footer>
 </div>
 
